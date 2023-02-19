@@ -28,7 +28,7 @@ export default function SideBar() {
               <p>Dashboard</p>
             </div>
           </NavLink>
-          <NavLink>
+          <NavLink className={({isActive})=>(isActive ? "active-link" : "link" )} to="/leads">
             <div className="icons">
               <PersonSearchIcon />
               <p>Leads</p>
