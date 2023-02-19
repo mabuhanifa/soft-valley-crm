@@ -10,7 +10,7 @@ export default function SideBar() {
   return (
     <div>
       <div className="sideBar">
-        <div>
+        <div className='s-f'>
           <h1 className="valley">
             <span className="soft">Soft</span>Valley
           </h1>

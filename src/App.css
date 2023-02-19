@@ -4,8 +4,10 @@
 .valley {
   color: navy;
 }
+.s-f {
+  margin-left: 20px;
+}
 .home {
-  margin: 20px;
   display: flex;
 }
 .side {
@@ -27,18 +29,17 @@
 .icons {
   display: flex;
   align-items: center;
+  padding: 0px 20px;
   font-weight: 600;
   column-gap: 10px;
 }
 .admin {
   border-bottom: 1px solid #ccc;
 }
-.link {
-  color: rgb(51, 51, 51);
-  border-bottom: 2px solid rgb(190, 190, 190);
-}
 
 .active-link {
-  color: rgb(61, 58, 255);
-  border-bottom: 2px solid rgb(51, 64, 247);
+  background-color: rgb(56, 56, 145);
+}
+.active-link .icons {
+  color: white;
 }
