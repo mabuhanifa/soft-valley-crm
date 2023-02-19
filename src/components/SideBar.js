@@ -16,7 +16,7 @@ export default function SideBar() {
           </h1>
         </div>
         <div className="links">
-          <NavLink>
+          <NavLink className={({isActive})=>(isActive ? "active-link" : "link" )} to="/admin">
             <div className="icons admin">
               <PersonIcon />
               <p>Admin</p>
