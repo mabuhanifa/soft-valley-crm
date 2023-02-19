@@ -1,18 +1,12 @@
-import { Button, Stack } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <Stack spacing={4} direction="row">
-        <Button variant="contained" color="primary">
-          Button
-        </Button>
-        <Button variant="contained" color="secondary">
-          Button
-        </Button>
-      </Stack>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
