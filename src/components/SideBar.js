@@ -34,19 +34,19 @@ export default function SideBar() {
               <p>Leads</p>
             </div>
           </NavLink>
-          <NavLink>
+          <NavLink className={({isActive})=>(isActive ? "active-link" : "link" )} to="/customer">
             <div className="icons">
               <PeopleIcon  />
               <p>Customer</p>
             </div>
           </NavLink>
-          <NavLink>
+          <NavLink className={({isActive})=>(isActive ? "active-link" : "link" )} to="/sales">
             <div className="icons">
               <MonetizationOnIcon/>
               <p>Sales</p>
             </div>
           </NavLink>
-          <NavLink>
+          <NavLink className={({isActive})=>(isActive ? "active-link" : "link" )} to="/expenses">
             <div className="icons">
               <AccountBalanceWalletIcon />
               <p>Expenses</p>
