@@ -4,6 +4,7 @@ import Admin from "./components/Admin";
 import Customer from "./components/Customer";
 import Home from "./components/Home";
 import Leads from "./components/Leads";
+import Sales from "./components/Sales";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/leads" element={<Leads />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/customer" element={<Customer />} />
+      <Route path="/sales" element={<Sales />} />
     </Routes>
   );
 }

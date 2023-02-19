@@ -1,7 +1,13 @@
 import React from 'react'
+import SideBar from './SideBar'
 
 export default function Sales() {
   return (
-    <div>Sales</div>
+    <div className="home">
+      <div className="side">
+        <SideBar />
+      </div>
+      <div>Sales</div>
+    </div>
   )
 }
