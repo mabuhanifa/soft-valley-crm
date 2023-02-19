@@ -13,6 +13,7 @@
 }
 .links a {
   text-decoration: none;
+  color: inherit;
 }
 .sidebar {
   display: flex;
@@ -26,7 +27,18 @@
 .icons {
   display: flex;
   align-items: center;
+  font-weight: 600;
+  column-gap: 10px;
 }
 .admin {
   border-bottom: 1px solid #ccc;
+}
+.link {
+  color: rgb(51, 51, 51);
+  border-bottom: 2px solid rgb(190, 190, 190);
+}
+
+.active-link {
+  color: rgb(61, 58, 255);
+  border-bottom: 2px solid rgb(51, 64, 247);
 }

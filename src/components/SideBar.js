@@ -1,6 +1,11 @@
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import PeopleIcon from '@mui/icons-material/People';
+import PersonIcon from '@mui/icons-material/Person';
+import PersonSearchIcon from '@mui/icons-material/PersonSearch';
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function SideBar() {
   return (
     <div>
@@ -11,42 +16,42 @@ export default function SideBar() {
           </h1>
         </div>
         <div className="links">
-          <Link>
+          <NavLink>
             <div className="icons admin">
-              <DashboardIcon />
+              <PersonIcon />
               <p>Admin</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink className={({isActive})=>(isActive ? "active-link" : "link" )} to="/dashboard">
             <div className="icons">
               <DashboardIcon />
               <p>Dashboard</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="icons">
-              <DashboardIcon />
+              <PersonSearchIcon />
               <p>Leads</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="icons">
-              <DashboardIcon />
+              <PeopleIcon  />
               <p>Customer</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="icons">
-              <DashboardIcon />
+              <MonetizationOnIcon/>
               <p>Sales</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="icons">
-              <DashboardIcon />
+              <AccountBalanceWalletIcon />
               <p>Expenses</p>
             </div>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>
