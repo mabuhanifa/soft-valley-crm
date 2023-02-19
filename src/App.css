@@ -1,0 +1,32 @@
+.soft {
+  color: orange;
+}
+.valley {
+  color: navy;
+}
+.home {
+  margin: 20px;
+  display: flex;
+}
+.side {
+  width: 10%;
+}
+.links a {
+  text-decoration: none;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.admin {
+  border-bottom: 1px solid #ccc;
+}
