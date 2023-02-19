@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Admin from "./components/Admin";
 import Customer from "./components/Customer";
+import Expenses from "./components/Expenses";
 import Home from "./components/Home";
 import Leads from "./components/Leads";
 import Sales from "./components/Sales";
@@ -15,6 +16,7 @@ function App() {
       <Route path="/admin" element={<Admin />} />
       <Route path="/customer" element={<Customer />} />
       <Route path="/sales" element={<Sales />} />
+      <Route path="/expenses" element={<Expenses />} />
     </Routes>
   );
 }

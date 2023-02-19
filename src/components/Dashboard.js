@@ -7,7 +7,7 @@ export default function Dashboard() {
       <div className="side">
         <SideBar />
       </div>
-      <div>Calender</div>
+      <div>Dashboard</div>
     </div>
   )
 }

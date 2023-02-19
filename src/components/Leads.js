@@ -7,7 +7,7 @@ export default function Leads() {
       <div className="side">
         <SideBar />
       </div>
-      <div>Calender</div>
+      <div>Leads</div>
     </div>
   )
 }
