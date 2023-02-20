@@ -1,5 +1,6 @@
 import React from 'react'
 import SideBar from './SideBar'
+import Tables from './Tables'
 
 export default function Leads() {
   return (
@@ -7,7 +8,10 @@ export default function Leads() {
       <div className="side">
         <SideBar />
       </div>
-      <div>Leads</div>
+      <div>
+        <div></div>
+        <div><Tables/></div>
+      </div>
     </div>
   )
 }
