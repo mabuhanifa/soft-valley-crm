@@ -30,7 +30,6 @@ export default function Tables() {
           {tableData.map((table) => (
             <TableRow
               key={table.id}
-              // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell>{table.id}</TableCell>
               <TableCell>{table.first_name}</TableCell>

@@ -8,7 +8,7 @@ export default function Leads() {
       <div className="side">
         <SideBar />
       </div>
-      <div>
+      <div className='leadsContainer'>
         <div></div>
         <div><Tables/></div>
       </div>
