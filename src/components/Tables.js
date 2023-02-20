@@ -1,4 +1,5 @@
 import {
+  Paper,
   Table,
   TableBody,
   TableCell,
@@ -10,7 +11,12 @@ import React from "react";
 
 export default function Tables() {
   return (
-    <TableContainer>
+    <TableContainer
+      component={Paper}
+      sx={{
+        boxShadow: 4,
+      }}
+    >
       <Table aria-label="leads-table">
         <TableHead>
           <TableRow>
@@ -22,7 +28,10 @@ export default function Tables() {
         </TableHead>
         <TableBody>
           {tableData.map((table) => (
-            <TableRow key={table.id}>
+            <TableRow
+              key={table.id}
+              // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
               <TableCell>{table.id}</TableCell>
               <TableCell>{table.first_name}</TableCell>
               <TableCell>{table.last_name}</TableCell>
