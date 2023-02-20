@@ -5,8 +5,24 @@ export default function Admin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const logIn = (e) => {
+  const logIn = async (e) => {
     e.preventDefault();
+    const res = await fetch(
+      "http://crm.softvalley.sveducrm.com/api/admin/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+      }
+    );
+    const data = await res.json();
+    const token = data.data.token;
+    localStorage.setItem("lead_token", token);
   };
   return (
     <div className="home">
