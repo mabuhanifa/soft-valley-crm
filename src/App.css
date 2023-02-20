@@ -43,6 +43,7 @@
 .active-link .icons {
   color: white;
 }
-.leadsContainer {
+.leadsContainer,
+.adminContainer {
   padding: 20px;
 }
