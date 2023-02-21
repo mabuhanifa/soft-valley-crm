@@ -7,13 +7,27 @@ import {
   TableHead,
   TableRow
 } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Tables() {
   let token;
   if (localStorage.getItem("lead_token")) {
     token = localStorage.getItem("lead_token");
   }
+  const fetchLeads = async () => {
+    const url = "http://crm.softvalley.sveducrm.com/api/admin/base/lead-status";
+    const res = await fetch(url, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = await res.json();
+    console.log(data);
+  };
+  useEffect(() => {
+    if (token) {
+      fetchLeads();
+    }
+  }, [token]);
+
   return (
     <TableContainer
       component={Paper}
