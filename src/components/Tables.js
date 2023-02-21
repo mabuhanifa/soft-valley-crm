@@ -10,6 +10,10 @@ import {
 import React from "react";
 
 export default function Tables() {
+  let token;
+  if (localStorage.getItem("lead_token")) {
+    token = localStorage.getItem("lead_token");
+  }
   return (
     <TableContainer
       component={Paper}
@@ -28,9 +32,7 @@ export default function Tables() {
         </TableHead>
         <TableBody>
           {tableData.map((table) => (
-            <TableRow
-              key={table.id}
-            >
+            <TableRow key={table.id}>
               <TableCell>{table.id}</TableCell>
               <TableCell>{table.first_name}</TableCell>
               <TableCell>{table.last_name}</TableCell>
